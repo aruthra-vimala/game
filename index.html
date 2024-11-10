@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ASL Learning Game</title>
+    <title>Candy Counting Game</title>
     <style>
         body {
             display: flex;
@@ -10,30 +10,24 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
-        #video, #canvas {
+        canvas {
             border: 1px solid black;
-            margin-top: 10px;
-        }
-        #target {
-            font-size: 48px;
-            margin-top: 20px;
+            background-color: #fff;
         }
         #score {
             font-size: 24px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>ASL Learning Game</h1>
-    <video id="video" width="320" height="240" autoplay></video>
-    <canvas id="canvas" width="320" height="240"></canvas>
-    <div id="target">A</div>
-    <div id="score">Score: 0</div>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <h1>Candy Counting Game</h1>
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    <div id="score">Candies Collected: 0</div>
     <script src="game.js"></script>
 </body>
 </html>
